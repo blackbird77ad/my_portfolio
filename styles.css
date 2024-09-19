@@ -3,7 +3,14 @@
   padding: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-decoration: none;
+  /* animation: grow 1s; */
+  
 }
+
+/* @keyframes grow {
+    0% { transform: scale(.2); }
+  100% { transform: scale(1); }
+} */
 
 nav {
   height: 15vh;
@@ -17,6 +24,18 @@ nav {
   margin: none;
   position: fixed;
 }
+
+nav button {
+  border-radius: 5rem;
+  font-weight: 1.3rem;
+  background-color: black;
+  color:#D7B88C;
+  width: 10%;
+  border: 2px, solid, rgb(228, 6, 6);
+}
+
+
+
 
 /* .navicon {
     display: flex;
@@ -35,6 +54,8 @@ nav img {
 nav h4 {
   color:#D7B88C;
   margin-left: 5rem;
+  width: 15%;
+  background-color: rgb(228, 6, 6);
 }
 
 .text-black {
@@ -50,7 +71,7 @@ nav h4 {
 }
 
 .nav-items-span {
-  color: black;
+  color: rgb(228, 6, 6);
   font-size: 1.16rem;
   text-decoration: none;
 }
@@ -78,6 +99,16 @@ nav h4 {
   color: #d7b88c;
 }
 
+/* .hero img {
+  opacity:1;
+} */
+
+/* .hero-inner {
+  height: 80%;
+  width: 80%;
+  background-image: linear-gradient(to bottom right, black 20, rgb(167, 47, 47) 40%, black 60%); 
+}*/
+
 .hero-cont1 {
   height: 100%;
   width: 100%;
@@ -90,21 +121,44 @@ nav h4 {
 
 .hero-cont1 p {
   font-size: 1.5rem;
+  color: #d7b88c;
+}
+
+.hero-cont1 p:hover {
+  font-size: 1.5rem;
+  color: rgb(228, 6, 6);
 }
 
 .hero-cont1 h1 {
   font-size: 2.5rem;
+  color: rgb(228, 6, 6);
 }
+
+.hero-cont1 h1:hover {
+  font-size: 3.5rem;
+  color: #d7b88c;
+}
+
+.hero-cont{
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
 
 .hero-cont2 {
   height: 100%;
   width: 50%;
   display: flex;
   justify-content: end;
+  
 }
 
 .hero-cont2 {
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 .about {
@@ -115,9 +169,23 @@ nav h4 {
 
 .about-inner {
   height: 80vh;
-  width: 50vw;
+  width: 80vw;
   border-radius: 5rem;
   background-color: #d7b88c;
   margin: auto;
   display: flex;
 }
+
+
+/* body {
+  
+}
+
+@keyframes grow {
+    0% { transform: scale(.2); }
+  100% { transform: scale(1); }
+}
+
+/* Article styles, just for the demo, don't have anything to do with the transition */
+body { background-color: rgba(0,0,0,.1); }
+article { max-width: 42rem; padding: 1rem; margin: auto; font-size: 21px; line-height: 1.5; } */
